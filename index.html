@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-25 m-5 form-group">
+        <label for="mobileModel" class="form-label"> Select Brand</label>
+      <select
+        class="form-select"
+        name="mobileModel"
+        id="mobileModel"
+        onchange="selectBrand(event)"
+      ></select>
+    </div>
+    <div class="w-25 mx-5 mt-2">
+        <label for="mobilename" class="form-label"> Select Model</label>
+      <select
+        class="form-select"
+        name="mobilename"
+        id="mobilename"
+        onchange="selectModel(event)"
+      ></select>
+    </div>
+
+    <div class="w-25 mx-5 mt-2 w-100 mt-4">
+        <label for="mobInformation" class="form-label"> Specification</label>
+       <table class="border border-1 w-25" id="mobInformation">
+        <thead>
+            <tr>
+            <th>Class</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody id="infoBody">
+            <tr>
+                <td>
+                    asdf
+                </td>
+                <td>
+                    adsf
+                </td>
+            </tr>
+        </tbody>
+       </table>
+      </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
